@@ -983,6 +983,7 @@ align-items: center;
 
     }
 
+
 }
 
 @media (max-width: 650px) {
@@ -1070,7 +1071,10 @@ align-items: center;
 
     }
 
-
+    .portfolio a{
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
 }
 
 /* ----------------------------------------------------
