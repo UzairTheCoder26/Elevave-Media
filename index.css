@@ -18,27 +18,33 @@ body {
 Header
 ---------------------------------------------------- */
 header {
-    width: 90%;
-    margin: 0 auto;
-    position: sticky;
-    top: 0;
+    position: relative;
     left: 0;
-    z-index: 2;
-    padding: 1rem 0;
+    top: 0;
+position:sticky;
+    z-index: 999999;
 
 }
 
 header nav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+
     height: max-content;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 5;
 }
 
 /* HDR Logo */
 header nav .logo img {
     height: 3.5rem;
+}
+header nav .logo .small-logo {
+    display: none;
 }
 
 /* HDR Links */
@@ -95,7 +101,76 @@ color: #021A2C !important;
     border: 2px solid #00EDFF;
 }
 
+/*--------------------------
+# SideBar For Tab And Mobiles
+-----------------------------*/
+.toggle-btn i{
+    display: none;
 
+}
+.toggle-btn i{
+    color: hsl(0, 0%, 100%) !important;
+
+  }
+  
+  .sidebar-menu {
+      display: block;
+      position: absolute;
+      right: 2rem;
+      top: 5.5rem;
+      width: 18.75rem;
+      height: 0;
+    z-index: 9999999999999999;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    /* OverLay */
+    .overlay{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(4px);
+        background-color: #02001291;
+        display: none;
+        position: absolute;
+    }
+    div.overlay.blurred{
+        display: block;
+    }
+    
+    .open {
+      height: max-content;
+      display: block;
+      background-color: #00EDFF;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.199);
+    }
+    
+    .sidebar-menu .links {
+      display: flex;
+      padding: 2rem;
+      flex-direction: column;
+      align-items: left;
+      gap: 1rem;
+    }
+    
+    .sidebar-menu .links li a {
+      font-size: 1rem;
+      font-family: "montserrat";
+      color: black;
+      font-weight: 600;
+    }
+    .sidebar-menu .links li a:hover {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    @media (max-width: 576px) {
+        .sidebar-menu {
+          left: 2rem;
+          width: unset;
+        }
+      }
+        
 /* ----------------------------------------------------
 Responsive Header
 ---------------------------------------------------- */
@@ -136,7 +211,7 @@ Laptop Screens
 /* ---------------------------
 Small Laptop Screens
 --------------------------- */
-@media (max-width: 910px) {
+@media (max-width: 1050px) {
     header nav .logo img {
         height: 2.6rem;
     }
@@ -169,119 +244,65 @@ Small Laptop Screens
 /* ---------------------------
 More Small Laptop Screens
 --------------------------- */
-@media (max-width: 850px) {
-    header nav .logo img {
-        height: 2.5rem;
-    }
-    header nav .links-box {
-        height: 2.5rem;
-        padding: 0 1.2rem;
-    }
-    header nav .links-box ul {
-        gap: 1rem;
-    }
-    header nav .links-box ul li a {
-        font-size: 0.75rem;
-        font-weight: 500;
-    }
-    /* HDR CTA */
-    
-    
-    header nav .hdr-ctaa {
-        padding: 0.5rem 1.2rem;
-        font-weight: 500;
-    }
-    header nav .hdr-ctaa:hover{
-    color: #021A2C !important;
-        background-color: var(--primary-color);
-        border: 2px solid #00EDFF;
-    }
-}
-/* ---------------------------
-Tablet Screens
---------------------------- */
-@media (max-width: 768px) {
-    header nav {
-        flex-direction: column;
-        gap: 1rem;
-        height: max-content;
-    }
-    header nav .logo img {
-        height: 2.5rem;
-    }
-    header nav .links-box {
-        height: 3rem;
-        width: 90%;
-    }
-    header nav .links-box ul {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        justify-content: space-between;
-        gap: 1rem;
-    }
 
-    header nav .links-box ul li a {
-        font-size: 1rem;
+
+@media (max-width: 850px) {
+    header{
+        background: linear-gradient(to bottom, 
+        #020012 0%,    /* Start color (solid red) at the top */
+        #020012 20%,   /* Start color (solid blue) at 20% height */
+        #020012d0 50%,      /* Start color (solid green) at 50% height */
+        rgba(0, 255, 0, 0) 100%   /* Transparent color at the bottom */
+    );
+        /* background: linear-gradient(to bottom,#020012, rgba(255, 0, 0, 0)); Change rgba(255, 0, 0, 1) to your desired solid color */
+        /* box-shadow: 0 5px 8px #020012; */
     }
-    header nav .hdr-ctaa {
+    header nav .logo img {
+        display: none;
+    }
+    header nav .logo .small-logo {
+        display: block;
+        height: 5rem;
+    }
+    header nav .links-box ul{
+        display: none;
+    }
+    header nav a.hdr-ctaa{
         display: none !important;
     }
 
+    header nav .links-box{
+        background-color: transparent ;
+        border: none;
+        height: max-content;
+        width: max-content;
+    }
+
+    .toggle-btn i{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+   
 }
+
 /* ---------------------------
 Mobile Screens
 --------------------------- */
 @media (max-width: 524px) {
-
-    header nav .links-box ul {
-        gap: 0.3rem;
-    }
-
-    header nav .links-box ul li a {
-        font-size: 0.8rem;
-    }
 
 }
 /* ---------------------------
 Small Mobile Screens
 --------------------------- */
 @media (max-width: 390px) {
-    header nav {
-        gap: 0.75rem;
-    }
-    header nav .links-box {
-        height: 2rem;
-    padding: 0 0.5rem;
 
-    }
-    header nav .links-box ul{
-        gap: 0.5rem;
-    }
-    header nav .links-box ul li a {
-        font-size: 0.5rem;
-        font-weight: 400;
-    }
 }
 /* ---------------------------
 More Small Mobile Screens
 --------------------------- */
 @media (max-width: 300px) {
-    header nav {
-        gap: 0.5rem;
-    }
-    header nav .links-box {
-        height: 2rem;
-    padding: 0 0.5rem;
 
-    }
-    header nav .links-box ul{
-        gap: 0.5rem;
-    }
-    header nav .links-box ul li a {
-        font-size: 0.5rem;
-        font-weight: 400;
-    }
 }
 /* ----------------------------------------------------
 Hero Section
@@ -799,14 +820,12 @@ Portfolio Section
     position: relative;
     top: -13rem;
     transform: rotate(-5deg);
-    z-index: 1;
 }
 
 .portfolio .portfolio-vid.second-left-one {
     position: relative;
     top: -1rem;
     transform: rotate(-3deg);
-    z-index: 1;
 
 }
 
@@ -814,7 +833,6 @@ Portfolio Section
     position: relative;
     top: -1rem;
     transform: rotate(3deg);
-    z-index: 1;
 
 }
 
@@ -822,7 +840,6 @@ Portfolio Section
     position: relative;
     top: -13rem;
     transform: rotate(5deg);
-    z-index: 1;
 
 }
 
@@ -1014,10 +1031,12 @@ align-items: center;
         width: 15rem;
         border-radius: 0.75rem;
         padding: 0.5rem;
+        z-index: 0;
 
     }
 
     .portfolio .portfolio-vid.first-left-one {
+        z-index:58 ;
         top: 0;
         transform: rotate(-3deg);
     }

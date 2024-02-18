@@ -1,26 +1,40 @@
 /*--------------------------------------------------------------
     # on Scroll
     --------------------------------------------------------------*/
-    window.addEventListener('scroll', function() {
-        var navElement = document.querySelector('nav');
-        var logo = document.querySelector('.logo');
-        var hdrCta = document.querySelector('.hdr-ctaa');
     
-        var distanceY = window.scrollY;
-        
-        // Change this value to specify when the header color should change
-        if (distanceY > 150) {
-          logo.style.display = 'none';
-          hdrCta.style.display = 'none';
-          navElement.style.justifyContent = 'center';
+// Function to handle scrolling behavior
+function handleScroll() {
+  var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      logo = document.querySelector('.logo'),
+      hdrCta = document.querySelector('.hdr-ctaa'),
+      navElement = document.querySelector('nav');
 
-        } else {
-          logo.style.display = 'block';
-          hdrCta.style.display = 'block';
-          navElement.style.justifyContent = 'space-between';
+  if (distanceY > 150) {
+      logo.style.display = 'none';
+      hdrCta.style.display = 'none';
+      navElement.style.justifyContent = 'center';
+  } else {
+      logo.style.display = 'block';
+      hdrCta.style.display = 'block';
+      navElement.style.justifyContent = 'space-between';
+  }
+}
 
-        }
-      });
+// Add scroll event only if window width is above 850px
+if (window.innerWidth > 850) {
+  window.addEventListener('scroll', handleScroll);
+}
+
+// Add event listener for window resize
+window.addEventListener('resize', function () {
+  if (window.innerWidth > 850) {
+      window.addEventListener('scroll', handleScroll);
+  } else {
+      window.removeEventListener('scroll', handleScroll);
+  }
+});
+
+ 
 /*--------------------------------------------------------------
     # Smooth Scrolling
     --------------------------------------------------------------*/
@@ -40,6 +54,86 @@
           });
         });
       };
+      /*--------------------------------------------------------------
+    # Side Bar Open Close Logic
+    --------------------------------------------------------------*/
+    // const toggleBtn = document.querySelector(".toggle-btn");
+    // const toggleBtnIcon = document.querySelector(".toggle-btn i");
+    // const sideBarMenu = document.querySelector(".sidebar-menu");
+    // const overlay = document.getElementById("overlay");
+    
+    // toggleBtn.addEventListener("click", function () {
+    //     sideBarMenu.classList.toggle("open");
+    // overlay.style.display = "block"
+    //     const isOpen = sideBarMenu.classList.contains("open");
+    
+    //     toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars", toggleBtnIcon.style.zIndex = "5";
+
+
+    // });
+    
+    // function closeSidebar() {
+    //     sideBarMenu.classList.remove("open");
+    //     toggleBtnIcon.classList = "fa-solid fa-bars";
+    // overlay.style.display = "none"
+
+    // }
+    
+    // window.addEventListener("click", function (event) {
+    //     if (
+    //         !sideBarMenu.contains(event.target) && // Clicked outside the sidebar
+    //         event.target !== toggleBtnIcon // Clicked outside the toggle button
+    //     ) {
+    //         closeSidebar();
+    //         overlay.style.display = "none"
+
+    //     }
+    // });
+/*--------------------------------------------------------------
+    # Side Bar Open Close Logic
+    --------------------------------------------------------------*/
+    const toggleBtn = document.querySelector(".toggle-btn");
+    const toggleBtnIcon = document.querySelector(".toggle-btn i");
+    const sideBarMenu = document.querySelector(".sidebar-menu");
+    const overlay = document.querySelector(".overlay");
+    const sideBarBtns = document.querySelectorAll(".links li");
+
+    sideBarBtns.forEach(function(btn) {
+        btn.addEventListener("click", function () {
+            closeSidebar();
+        });
+    });
+
+    toggleBtn.addEventListener("click", function () {
+        sideBarMenu.classList.toggle("open");
+        overlay.classList.toggle("blurred");
+
+
+
+        const isOpen = sideBarMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+
+    });
+
+    function closeSidebar() {
+        sideBarMenu.classList.remove("open");
+        toggleBtnIcon.classList = "fa-solid fa-bars";
+        overlay.classList.remove("blurred");
+
+
+    }
+
+    window.addEventListener("click", function (event) {
+        if (
+            !sideBarMenu.contains(event.target) && // Clicked outside the sidebar
+            event.target !== toggleBtnIcon // Clicked outside the toggle button
+        ) {
+            closeSidebar();
+        }
+    });
+
+ 
 /*--------------------------------------------------------------
     # FAQs
     --------------------------------------------------------------*/
