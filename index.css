@@ -1836,6 +1836,21 @@ Big Screens
         padding: .65rem 1.3rem;
     }
 }
+@media (max-width: 380px) {
+    .end-cta h2{
+        font-size:1.4rem !important;
+        margin-bottom: 1rem;
+
+    }
+    .end-cta p{
+        font-size:.8rem !important;
+
+    }
+    .end-cta a {
+        padding: .5rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
 /* -----------------------------------------
 Footer
 ----------------------------------------- */
