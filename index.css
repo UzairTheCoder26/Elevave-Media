@@ -736,6 +736,7 @@ Big Screens
     .portfolio pre {
         font-size: 2.5rem;
         line-height: 130%;
+        margin-bottom: 1rem;
     }
 
     .portfolio pre span {
@@ -1753,14 +1754,15 @@ End Cta Section
     font-size: 3.5rem !important;
     text-align: center;
     line-height: 120%;
-    margin-bottom: 1rem;
+    margin: 1rem 3rem 2rem 3rem;
 
 }
 
 .end-cta p {
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin: 0 3rem 2rem 3rem;
+
 }
 
 .end-cta a {
@@ -1772,22 +1774,13 @@ End Cta Section
 
 }
 
+
 /* -----------------------------------------
 Responsive End Cta Section
 ----------------------------------------- */
 /* ---------------------------
 Big Screens
 --------------------------- */
-
-@media (min-width: 1550px) {
-    .end-cta {
-        width: 75rem;
-    }
-
-    .end-cta h2 {
-        font-size: 3.781rem !important;
-    }
-}
 @media (min-width: 1550px) {
     .end-cta{
         width: 75rem;
@@ -1801,65 +1794,47 @@ Big Screens
         text-align: center;
     }
 }
-
-@media (max-width: 1350px) {
-
+@media (max-width: 750px) {
     .end-cta h2{
-        font-size: 2.25rem !important;
-        text-align: center !important;
-    }
-    .end-cta p{
-        text-align: center;
-        font-size: 1rem;
-        margin-top: 0;
-    }
-    .end-cta a{
-        margin-top: 0;
-        padding: 0.5rem 1rem;
-        border-radius: .5rem;
-    
-    
-    }
+        font-size:3rem !important;
 
+    }
 }
-@media (max-width: 850px) {
-
+@media (max-width: 620px) {
     .end-cta h2{
-        font-size: 1.7rem !important;
+        font-size:2.5rem !important;
+
     }
     .end-cta p{
-        text-align: center;
-        font-size: 0.7rem;
-        margin-top: 0;
-    }
-    .end-cta a{
-        margin-top: 0;
-        padding: 0.4rem .8rem;
-        border-radius: .5rem;
-    font-size: 1rem;
-    
-    }
+        font-size:1.5rem !important;
 
+    }
 }
-@media (max-width: 650px) {
-
+@media (max-width: 520px) {
     .end-cta h2{
-        font-size: 1.5rem !important;
+        font-size:2rem !important;
+
     }
     .end-cta p{
-        text-align: center;
-        font-size: 0.5rem;
-        margin-top: 0;
-    }
-    .end-cta a{
-        margin-top: 0;
-        padding: 0.5rem 1rem;
-        border-radius: .5rem;
-        font-size: .8rem;
-    
-    
-    }
+        font-size:1rem !important;
 
+    }
+    .end-cta a {
+        padding: .75rem 1.5rem;
+    }
+}
+@media (max-width: 440px) {
+    .end-cta h2{
+        font-size:1.6rem !important;
+
+    }
+    .end-cta p{
+        font-size:.9rem !important;
+
+    }
+    .end-cta a {
+        padding: .65rem 1.3rem;
+    }
 }
 /* -----------------------------------------
 Footer
