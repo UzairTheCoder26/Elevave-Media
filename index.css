@@ -495,12 +495,6 @@ section.our-clients {
 
 }
 
-section.our-clients h2 {
-    font-family: "jost";
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
 
 section.our-clients .clients {
     width: 90%;
@@ -554,11 +548,6 @@ Big Screens
 @media (max-width: 1200px) {
     section.our-clients {
     }
-
-    section.our-clients h2 {
-        font-size: 2.5rem;
-    }
-
     section.our-clients .clients {
         gap: 1rem;
         margin-top: 0;
@@ -577,10 +566,6 @@ Big Screens
 @media (max-width: 880px) {
     section.our-clients {
         margin-top: 0;
-    }
-
-    section.our-clients h2 {
-        font-size: 2rem;
     }
 
     section.our-clients .clients {
@@ -1052,10 +1037,17 @@ section.testimonials .testimonial-boxes img {
         font-size: 2rem;
     }
 }
-
+@media (max-width: 569px) {
+    section.testimonials .testimonial-boxes img {
+        width: 90%;
+    }
+    section.testimonials .testimonial-boxes {
+        gap: 2rem;
+    }
+    
+}
 @media (max-width: 460px) {
     section.testimonials .testimonial-boxes {
-        gap: 1.5rem;
         margin-top: 0;
     }
 
@@ -1068,7 +1060,6 @@ section.testimonials .testimonial-boxes img {
 
 @media (max-width: 330px) {
     section.testimonials .testimonial-boxes {
-        gap: 1rem;
         margin-top: 0;
     }
 
@@ -1076,9 +1067,6 @@ section.testimonials .testimonial-boxes img {
         font-size: 1.5rem;
     }
 
-    section.testimonials .testimonial-boxes img {
-        width: 13rem;
-    }
 }
 /* ----------------------------------------------------
 The process Section
@@ -1190,11 +1178,12 @@ Big Screens
     }
 }
 
-@media (max-width: 580px) {
-    section.process .steps {
-        gap: 2rem;
-    }
+@media (max-width: 569px) {
+    section.process .steps img {
 
+        width: 90%;
+    }
+    
     section.process pre {
         font-size: 1.3rem;
         margin-bottom: 2rem;
@@ -1204,15 +1193,10 @@ Big Screens
         font-size: 2.6rem;
     }
 
-    section.process .steps {
-        margin-top: 0;
-    }
 }
 
 @media (max-width: 510px) {
-    section.process .steps {
-        gap: 2rem;
-    }
+
 
     section.process pre {
         font-size: 1.1rem;
@@ -1222,24 +1206,9 @@ Big Screens
         font-size: 2rem;
     }
 
-    section.process .steps {
-        margin-top: 0;
-    }
-
-    section.process .steps .step img {
-    }
-}
-@media (max-width: 330px) {
-
-    section.process .steps .step img {
-        width: 13rem;
-    }
 }
 
 @media (max-width: 450px) {
-    section.process .steps {
-        gap: 2rem;
-    }
 
     section.process pre {
         font-size: 1rem;
@@ -1249,16 +1218,9 @@ Big Screens
         font-size: 1.8rem;
     }
 
-    section.process .steps {
-        margin-top: 0;
-    }
-
 }
 
 @media (max-width: 380px) {
-    section.process .steps {
-        gap: 2rem;
-    }
 
     section.process pre {
         font-size: 0.8rem;
@@ -1268,14 +1230,6 @@ Big Screens
         font-size: 1.6rem;
     }
 
-    section.process .steps {
-        margin-top: 0;
-    }
-
-    section.process .steps img {
-        width: 13rem;
-
-    }
 }  
 
 /* ----------------------------------------------------
@@ -1399,6 +1353,29 @@ Big Screens
     }
 }
 
+@media (max-width: 569px) {
+    section.pricing .price-box {
+        width: 90%;
+        height: max-content;
+    }
+    section.pricing .price-box img {
+        width: 100% !important;
+    }
+    section.pricing .price-box a {
+        width: 100% !important ;
+
+    }
+    
+    
+    section.testimonials .testimonial-boxes {
+        gap: 2rem;
+    }
+    
+}
+
+
+
+
 @media (max-width: 480px) {
     section.pricing pre {
         font-size: 1.1rem;
@@ -1407,13 +1384,7 @@ Big Screens
     section.pricing pre span {
         font-size: 1.75rem;
     }
-    section.pricing .price-box img{
-        width: 13rem !important ;
-    }
-    section.pricing .price-box a {
-        width: 13rem !important ;
 
-    }
 }   
 @media (max-width: 380px) {
     section.pricing pre {
@@ -1524,6 +1495,12 @@ Big Screens
         font-size: 1rem;
         padding: 0.7rem 1.4rem;
         border-radius: 10px;
+    }
+}
+@media (max-width: 569px) {
+    .book-a-call .container{
+        width: 80% !important;
+
     }
 }
 @media (max-width: 400px) {
