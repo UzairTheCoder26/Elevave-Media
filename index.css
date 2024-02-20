@@ -515,6 +515,11 @@ section.our-clients .clients .client {
 
 section.our-clients .clients .client img {
     height: 10rem;
+    filter: grayscale(1110%);
+    transition: all ease 0.5s;
+}
+section.our-clients .clients .client img:hover{
+    filter: grayscale(0%);
 }
 
 section.our-clients .clients .client p {
@@ -1741,34 +1746,16 @@ Big Screens
 /* -----------------------------------------
 End Cta Section
 ----------------------------------------- */
-.end-cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 5rem auto 3rem auto;
-}
 
-.end-cta h2 {
-    font-size: 3.5rem !important;
-    text-align: center;
-    line-height: 120%;
-    margin: 1rem 3rem 2rem 3rem;
-
-}
-
-.end-cta p {
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 0 3rem 2rem 3rem;
-
-}
 .end-cta a{
     font-size: 1.2rem;
     font-weight: 600;
     padding: 1rem 2rem;
 border: 2px solid #00EDFF;
 border-radius: 1rem;
+display: block;
+width: max-content;
+margin: auto;
 
 }
 
@@ -1784,84 +1771,39 @@ Responsive End Cta Section
 /* ---------------------------
 Big Screens
 --------------------------- */
-@media (min-width: 1550px) {
-    .end-cta{
-        width: 75rem;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .end-cta h2{
-        font-size:3.781rem !important;
-
-        text-align: center;
-    }
-}
-@media (max-width: 750px) {
-    .end-cta h2{
-        font-size:3rem !important;
-
-    }
+@media (max-width: 950px) {
     .end-cta a{
         font-size: 1rem;
         padding: 0.7rem 1.4rem;
         border-radius: 10px;
     }
 }
-@media (max-width: 620px) {
-    .end-cta h2{
-        font-size:2.5rem !important;
-
-    }
-    .end-cta p{
-        font-size:1.5rem !important;
-
+@media (max-width: 750px) {
+    .end-cta a{
+        font-size: 1rem;
+        padding: 0.7rem 1.4rem;
+        border-radius: 10px;
     }
 }
+
 @media (max-width: 520px) {
-    .end-cta h2{
-        font-size:2rem !important;
-
-    }
-    .end-cta p{
-        font-size:1rem !important;
-
-    }
     .end-cta a#end-cta-cta {
         padding: .75rem 1.5rem;
     }
 }
 @media (max-width: 440px) {
-    .end-cta h2{
-        font-size:1.6rem !important;
-
-    }
-    .end-cta p{
-        font-size:.9rem !important;
-    }
     .end-cta .container a{
         padding: 0.5rem 1rem;
         font-size: 0.7rem;
     }
     
 }
-@media (max-width: 380px) {
-    .end-cta h2{
-        font-size:1.4rem !important;
-        margin-bottom: 1rem;
-
-    }
-    .end-cta p{
-        font-size:.8rem !important;
-
-    }
-}
-/* -----------------------------------------
+/*--------------------------------------
 Footer
 ----------------------------------------- */
 
 footer {
-    background-color: #1B4557;
+    background-color: #1B4557 !important;
     height: max-content;
     padding: 2rem 0 4rem 0;
     margin-top: 2rem;
