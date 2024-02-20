@@ -1766,12 +1766,11 @@ End Cta Section
 
 }
 
-.end-cta a {
+.end-cta a#end-cta-cta {
     margin-top: 0;
     padding: 1rem 2rem;
     border-radius: 1rem;
-
-    border: 2px solid #00EDFF;
+    border: 1px solid #00EDFF;
 
 }
 
@@ -1820,7 +1819,7 @@ Big Screens
         font-size:1rem !important;
 
     }
-    .end-cta a {
+    .end-cta a#end-cta-cta {
         padding: .75rem 1.5rem;
     }
 }
@@ -1832,7 +1831,7 @@ Big Screens
     .end-cta p{
         font-size:.9rem !important;
     }
-    .end-cta a {
+    .end-cta a#end-cta-cta {
         padding: .65rem 1.3rem;
     }
 }
@@ -1846,7 +1845,7 @@ Big Screens
         font-size:.8rem !important;
 
     }
-    .end-cta a {
+    .end-cta a#end-cta-cta {
         padding: .5rem 1.2rem;
         font-size: 0.9rem;
     }
@@ -1859,6 +1858,7 @@ footer {
     background-color: #1B4557;
     height: max-content;
     padding: 2rem 0 4rem 0;
+    margin-top: 2rem;
 }
 
 footer .icons {
@@ -1891,7 +1891,7 @@ footer p {
     color: white;
     font-family: "montserrat";
     font-weight: 500;
-    margin-top: 0;
+    margin-top: 1rem;
 }
 
 /* -----------------------------------------
