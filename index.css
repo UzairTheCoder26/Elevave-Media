@@ -1444,8 +1444,7 @@ Book a Call Section
     margin-bottom: 3rem;
 }
 
-.book-a-call .container a,
-.end-cta a {
+.book-a-call .container a{
     font-size: 1.2rem;
     font-weight: 600;
     padding: 1rem 2rem;
@@ -1454,8 +1453,7 @@ border-radius: 1rem;
 
 }
 
-.book-a-call .container a:hover,
-.end-cta a:hover {
+.book-a-call .container a:hover {
     background-color: var(--primary-color);
     color: #021A2C;
     transition: all ease 0.5s;
@@ -1765,15 +1763,20 @@ End Cta Section
     margin: 0 3rem 2rem 3rem;
 
 }
-
-.end-cta a#end-cta-cta {
-    margin-top: 0;
+.end-cta a{
+    font-size: 1.2rem;
+    font-weight: 600;
     padding: 1rem 2rem;
-    border-radius: 1rem;
-    border: 1px solid #00EDFF;
+border: 2px solid #00EDFF;
+border-radius: 1rem;
 
 }
 
+.end-cta a:hover {
+    background-color: var(--primary-color);
+    color: #021A2C;
+    transition: all ease 0.5s;
+}
 
 /* -----------------------------------------
 Responsive End Cta Section
@@ -1798,6 +1801,11 @@ Big Screens
     .end-cta h2{
         font-size:3rem !important;
 
+    }
+    .end-cta a{
+        font-size: 1rem;
+        padding: 0.7rem 1.4rem;
+        border-radius: 10px;
     }
 }
 @media (max-width: 620px) {
@@ -1831,9 +1839,11 @@ Big Screens
     .end-cta p{
         font-size:.9rem !important;
     }
-    .end-cta a#end-cta-cta {
-        padding: .65rem 1.3rem;
+    .end-cta .container a{
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
     }
+    
 }
 @media (max-width: 380px) {
     .end-cta h2{
@@ -1844,10 +1854,6 @@ Big Screens
     .end-cta p{
         font-size:.8rem !important;
 
-    }
-    .end-cta a#end-cta-cta {
-        padding: .5rem 1.2rem;
-        font-size: 0.9rem;
     }
 }
 /* -----------------------------------------
