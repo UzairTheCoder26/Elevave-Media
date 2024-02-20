@@ -6,7 +6,6 @@
     font-family: "poppins";
     color: white;
     --primary-color: #00EDFF;
-
 }
 
 body {
@@ -1534,8 +1533,10 @@ FAQs
 ----------------------------------------- */
 section.qns-ans {
     max-width: 90%;
+    padding: 0 5%;
     margin: 5rem auto;
     transition: all ease 0.4s;
+
 
 }
 
