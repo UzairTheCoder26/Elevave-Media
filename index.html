@@ -19,6 +19,10 @@
         href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- End Google Fonts -->
+    <!-- AOS GitHub -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <!--End AOS GitHub -->
 
     <!-- StyleSheets -->
     <link rel="stylesheet" href="index.css">
@@ -35,7 +39,7 @@
 Header 
 --------------------------------------------------- -->
 
-    <header>
+    <header  data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
         <nav>
             <div class="logo">
                 <a href="#hero">
@@ -58,28 +62,29 @@ Header
             <a href="#book-a-call" class="hdr-ctaa">Start Now</a>
         </nav>
 
-<!-- Mobile SideBar -->
+        <!-- Mobile SideBar -->
 
-<div class="sidebar-menu">
-    <ul class="links">
-        <li><a href="#our-clients">Our Clients</a></li>
-                    <li><a href="#portfolio">Our Craft</a></li>
-                    <li><a href="#process">The Process</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#faqs">FAQs</a></li>
-    </ul>
-</div>
-<div id="overlay" class="overlay"></div>
+        <div class="sidebar-menu">
+            <ul class="links">
+                <li><a href="#our-clients">Our Clients</a></li>
+                <li><a href="#portfolio">Our Craft</a></li>
+                <li><a href="#process">The Process</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+        </div>
+        <div id="overlay" class="overlay"></div>
     </header>
     <main>
         <!-- ---------------------------------------------------
 Hero Section 
 --------------------------------------------------- -->
-        <section class="hero" id="hero">
+        <section class="hero" id="hero"  data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
             <div class="text-container">
                 <h1>Crafting <br>
                     <span> Short Videos</span><br>
-                 for viral growth</h1>
+                    for viral growth
+                </h1>
                 <div class="ctas">
                     <a href="#pricing" class="cta unfilled-cta">View Pricing</a>
                     <a href="#book-a-call" class="cta filled-cta">Book a Call</a>
@@ -89,7 +94,7 @@ Hero Section
         <!-- ---------------------------------------------------
 Clients Section
 --------------------------------------------------- -->
-        <section class="our-clients" id="our-clients">
+        <section class="our-clients" id="our-clients" data-aos="fade-up" data-aos-duration="1000">
             <div class="clients">
                 <div class="client">
                     <img src="Images/People/DP.jpg" alt="">
@@ -121,7 +126,7 @@ Clients Section
 portfolio Section
 --------------------------------------------------- -->
         <section class="portfolio" id="portfolio">
-            <pre>           Videos
+            <pre   data-aos="zoom-in" data-aos-duration="1000">           Videos
               <span>that Makes </span>
 your brand spread
         <span>like wildfire</span>
@@ -151,7 +156,8 @@ your brand spread
                         title="Jordan Welch" style="aspect-ratio: 0.56250000; overflow: hidden;" frameborder="0"
                         scrolling="no" allow="fullscreen"></iframe>
                 </div>
-                <div class="portfolio-vid  first-right-one" data-video-id="5694" style="aspect-ratio: 0.56250000; overflow: hidden;">
+                <div class="portfolio-vid  first-right-one" data-video-id="5694"
+                    style="aspect-ratio: 0.56250000; overflow: hidden;">
                     <script>window.addEventListener('message', function (e) { if (!e.origin.includes("vidzflow")) { return; } if (e.data.eventType === 'videoReady') { new IntersectionObserver((entries, observer) => { entries.forEach(entry => { if (entry.isIntersecting && entry.target.getAttribute('data-video-id') === String(e.data.videoId)) { let iframe = entry.target.querySelector('iframe'); if (iframe) { iframe.contentWindow.postMessage("playerPlay", "*"); observer.unobserve(entry.target); } } }); }).observe(document.querySelector(`div[data-video-id="${e.data.videoId}"]`)); } });</script>
                     <iframe width="100%" height="100%"
                         src="https://app.vidzflow.com/v/7Ze5S8KcTt?dq=576&ap=false&muted=false&loop=true&ctp=true&bv=false&piv=true&bc=%2300edff&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen"
@@ -165,43 +171,43 @@ Testimonial Section
 --------------------------------------------------- -->
         </section>
         <section class="testimonials">
-            <h2>Snippets of <span>Satisfaction</span>
+            <h2 data-aos="zoom-in"  data-aos-duration="1000">Snippets of <span>Satisfaction</span>
             </h2>
             <div class="testimonial-boxes">
-                <img src="Images/Testimonials/Frame 11.png" alt="">
-                <img src="Images/Testimonials/Frame 11.png" alt="">
-                <img src="Images/Testimonials/Frame 11.png" alt="">
+                <img src="Images/Testimonials/Frame 11.png" alt=""  data-aos="fade-right"  data-aos-duration="1000">
+                <img src="Images/Testimonials/Frame 11.png" alt=""  data-aos="fade-up"  data-aos-duration="1000">
+                <img src="Images/Testimonials/Frame 11.png" alt=""  data-aos="fade-left"  data-aos-duration="1000">
             </div>
         </section>
         <!-- ---------------------------------------------------
 3 Step Process Section 
 --------------------------------------------------- -->
         <section class="process" id="process">
-            <pre>                        <span>Simple</span> 3-Step process
+            <pre  data-aos="zoom-in"  data-aos-duration="1000">                        <span>Simple</span> 3-Step process
 to make your brand <span>Go Big</span></pre>
             <div class="steps">
-                <img src="Images/Our Process Steps/Step 1.png" alt="">
-                <img src="Images/Our Process Steps/Step 2.png" alt="">
-                <img src="Images/Our Process Steps/Step 3.png" alt="">
+                <img src="Images/Our Process Steps/Step 1.png" alt=""  data-aos="fade-right"  data-aos-duration="1000">
+                <img src="Images/Our Process Steps/Step 2.png" alt=""  data-aos="fade-up"  data-aos-duration="1000">
+                <img src="Images/Our Process Steps/Step 3.png" alt=""  data-aos="fade-left"  data-aos-duration="1000">
             </div>
         </section>
         <!-- ---------------------------------------------------
 Pricing Section 
 --------------------------------------------------- -->
         <section class="pricing" id="pricing">
-            <pre>                <span>Subscribe</span> today,
+            <pre   data-aos="zoom-in"  data-aos-duration="1000">                <span>Subscribe</span> today,
 Start growing <span>Tomorrow</span></pre>
             <div class="price-boxes">
-                <div class="price-box">
+                <div class="price-box" data-aos="fade-right"  data-aos-duration="1000">
                     <img src="Images/Pricing Boxes/Basic.png" alt="">
                     <a href="https://calendly.com/elevavemedia/elevave-media-discovery-call">Book a Call</a>
                 </div>
-                <div class="price-box">
+                <div class="price-box" data-aos="fade-up"  data-aos-duration="1000">
                     <img src="Images/Pricing Boxes/Growth.png" alt="">
                     <a href="https://calendly.com/elevavemedia/elevave-media-discovery-call">Book a Call</a>
 
                 </div>
-                <div class="price-box">
+                <div class="price-box" data-aos="fade-left"  data-aos-duration="1000">
                     <img src="Images/Pricing Boxes/Platinum.png" alt="">
                     <a href="https://calendly.com/elevavemedia/elevave-media-discovery-call">Book a Call</a>
 
@@ -211,7 +217,7 @@ Start growing <span>Tomorrow</span></pre>
         <!-- ---------------------------------------------------
 Book a Call Section 
 --------------------------------------------------- -->
-        <section class="book-a-call" id="book-a-call">
+        <section class="book-a-call" id="book-a-call"  data-aos="zoom-in"  data-aos-duration="1000">
             <div class="container">
                 <div class="icon"><img src="Images/Icons/Book a Call Icon.png" alt=""></div>
                 <h2>Book a Call</h2>
@@ -221,7 +227,7 @@ Book a Call Section
             </div>
         </section>
         <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget"
+        <div class="calendly-inline-widget"  data-aos="fade-up"  data-aos-duration="1000"
             data-url="https://calendly.com/elevavemedia/elevave-media-discovery-call?background_color=020012&text_color=ffffff&primary_color=00edff"
             style="min-width:320px;height:700px;"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -230,8 +236,8 @@ Book a Call Section
 FAQs Section 
 --------------------------------------------------- -->
         <section class="qns-ans" id="faqs">
-            <h2>FAQ's</h2>
-            <div class="faq">
+            <h2  data-aos="zoom-in"  data-aos-duration="1000">FAQ's</h2>
+            <div class="faq"   data-aos="fade-right"  data-aos-duration="1000">
                 <button class="accordion">
                     <p>
                         What happens after i pay?
@@ -244,7 +250,7 @@ FAQs Section
                     </p>
                 </div>
             </div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-left"  data-aos-duration="1000">
                 <button class="accordion">
                     <p>
                         How do we communicate?
@@ -260,7 +266,7 @@ FAQs Section
                 </div>
             </div>
 
-            <div class="faq">
+            <div class="faq" data-aos="fade-right"  data-aos-duration="1000">
                 <button class="accordion">
                     <p>
                         Can i request custom edits? If yes, how?
@@ -275,7 +281,7 @@ FAQs Section
                     </p>
                 </div>
             </div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-left"  data-aos-duration="1000">
                 <button class="accordion">
                     <p>
                         Do you only do short-form videos?
@@ -290,7 +296,7 @@ FAQs Section
                     </p>
                 </div>
             </div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-right"  data-aos-duration="1000">
                 <button class="accordion">
                     <p>
                         Is there a guarantee for my growth?
@@ -305,7 +311,7 @@ FAQs Section
                     </p>
                 </div>
             </div>
-            <div class="faq">
+            <div class="faq" data-aos="fade-left"  data-aos-duration="1000">
                 <button class="accordion">
                     <p>
 
@@ -327,8 +333,8 @@ FAQs Section
 
             </div>
         </section>
-        <section class="end-cta">
-            <h2>Enough of Getting Videos Edited for the <br>
+        <section class="end-cta" data-aos="zoom-in"  data-aos-duration="1000">
+            <h2 >Enough of Getting Videos Edited for the <br>
                 Sake of Editing</h2>
             <p>Pick a plan of Your Choice and Spice up Your Online Presence Today</p>
             <a href="#book-a-call">Start Now</a>

@@ -54,41 +54,6 @@ window.addEventListener('resize', function () {
           });
         });
       };
-      /*--------------------------------------------------------------
-    # Side Bar Open Close Logic
-    --------------------------------------------------------------*/
-    // const toggleBtn = document.querySelector(".toggle-btn");
-    // const toggleBtnIcon = document.querySelector(".toggle-btn i");
-    // const sideBarMenu = document.querySelector(".sidebar-menu");
-    // const overlay = document.getElementById("overlay");
-    
-    // toggleBtn.addEventListener("click", function () {
-    //     sideBarMenu.classList.toggle("open");
-    // overlay.style.display = "block"
-    //     const isOpen = sideBarMenu.classList.contains("open");
-    
-    //     toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars", toggleBtnIcon.style.zIndex = "5";
-
-
-    // });
-    
-    // function closeSidebar() {
-    //     sideBarMenu.classList.remove("open");
-    //     toggleBtnIcon.classList = "fa-solid fa-bars";
-    // overlay.style.display = "none"
-
-    // }
-    
-    // window.addEventListener("click", function (event) {
-    //     if (
-    //         !sideBarMenu.contains(event.target) && // Clicked outside the sidebar
-    //         event.target !== toggleBtnIcon // Clicked outside the toggle button
-    //     ) {
-    //         closeSidebar();
-    //         overlay.style.display = "none"
-
-    //     }
-    // });
 /*--------------------------------------------------------------
     # Side Bar Open Close Logic
     --------------------------------------------------------------*/
@@ -155,3 +120,15 @@ window.addEventListener('resize', function () {
                     }
                 });
             }
+
+/*--------------------------------------------------------------
+    # Animate on Scroll
+    --------------------------------------------------------------*/
+
+
+
+            AOS.init({
+                offset: 40,
+                delay: 50,
+                duration: 1000,
+              });
