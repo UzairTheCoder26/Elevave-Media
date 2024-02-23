@@ -953,6 +953,259 @@ align-items: center;
         font-size: 1rem;
     }
 }
+/* ----------------------------------------------------
+Why Choose Us Section
+---------------------------------------------------- */
+/* Chose us Reasons */
+section.why-choose-us .reasons{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+section.why-choose-us .reasons .reason-box {
+    margin-top: 4rem;
+    /* box-sizing: border-box; */
+background-color: #00EDFF;
+    width: 24rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 1.75rem 0.5rem 1.75rem 1rem;
+    border-radius: 1rem;
+}
+section.why-choose-us .reasons .reason-box img{
+    height: 90%;
+    max-height: 6.5rem;
+    margin-right: 1.5rem;
+}
+section.why-choose-us .reasons .reason-box .txt-cont{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+section.why-choose-us .reasons .reason-box .txt-cont h3{
+    margin: 0;
+
+    font-family: "jost";
+    font-weight: 800;
+    font-size: 150%;
+    /* font-size: 1.5rem; */
+    margin-bottom: 0.5rem;
+    color: black;
+    text-align: left;
+}
+section.why-choose-us .reasons .reason-box .txt-cont p{
+    font-family: "poppins";
+    font-size: 90% ;
+    /* font-size: 0.9rem; */
+    font-weight: 500;
+    margin: 0;
+    color: black;
+    text-align: left;
+
+}
+/* ----------------------------------------------------
+Responsive Process Section
+---------------------------------------------------- */
+/* ---------------------------
+Big Screens
+--------------------------- */
+@media (min-width: 1550px) {
+    section.why-choose-us .reasons {
+        width: 75rem;
+    }
+    section.why-choose-us .reasons .reason-box {
+    width: 22rem;
+
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont h3{
+        font-size: 130%;
+        /* font-size: 1.5rem; */
+        margin-bottom: 0.5rem;
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont p{
+        font-family: "poppins";
+        font-size: 75%;
+        font-weight: 500;
+        margin: 0;
+    }
+}
+@media (max-width: 1450px) {
+    section.why-choose-us .reasons{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+}
+@media (max-width: 1150px) {
+    section.why-choose-us .reasons {
+        gap: 2rem;
+    }
+
+    section.why-choose-us pre {
+        font-size: 2.5rem;
+    }
+
+    section.why-choose-us pre span {
+        font-size: 3.5rem;
+    }
+
+    section.why-choose-us .reasons {
+        margin-top: 0;
+    }
+    
+}
+
+@media (max-width: 950px) {
+    section.why-choose-us .reasons {
+        gap: 2rem;
+    }
+
+    section.why-choose-us pre {
+        font-size: 2rem;
+    }
+
+    section.why-choose-us pre span {
+        font-size: 3rem;
+    }
+
+    section.why-choose-us .reasons {
+        margin-top: 0;
+    }
+}
+@media (max-width: 850px) {
+    section.why-choose-us .reasons{
+        justify-content: center;
+
+    }
+    /* section.process .steps img {
+        width: 15rem;
+    } */
+}
+
+@media (max-width: 750px) {
+    section.why-choose-us .reasons {
+        gap: 2rem;
+    }
+
+    section.why-choose-us pre {
+        font-size: 1.5rem;
+    }
+
+    section.why-choose-us pre span {
+        font-size: 2.5rem;
+    }
+
+    section.why-choose-us .reasons {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 569px) {
+    /* section.process .steps img {
+
+        width: 90%;
+    }
+     */
+    section.why-choose-us pre {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    section.why-choose-us pre span {
+        font-size: 2.6rem;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+
+    section.why-choose-us pre {
+        font-size: 1.1rem;
+    }
+
+    section.why-choose-us pre span {
+        font-size: 2rem;
+    }
+
+    section.why-choose-us .reasons .reason-box img{
+        height: 5.5rem;
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont{
+        padding-right: 1rem;
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont h3{
+        font-size: 120%;
+        /* font-size: 1.5rem; */
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont p{
+        font-size: 70% ;
+        /* font-size: 0.9rem; */
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    section.why-choose-us pre {
+        font-size: 1rem;
+    }
+
+    section.why-choose-us pre span {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    section.why-choose-us pre {
+        font-size: 0.8rem;
+    }
+
+    section.why-choose-us pre span {
+        font-size: 1.6rem;
+    }
+    section.why-choose-us .reasons .reason-box img{
+        height: 4.5rem;
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont{
+        padding-right: 1rem;
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont h3{
+        font-size: 110%;
+        /* font-size: 1.5rem; */
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont p{
+        font-size: 70% ;
+        /* font-size: 0.9rem; */
+    }
+}  
+@media (max-width: 360px) {
+    section.why-choose-us .reasons .reason-box img{
+        height: 4rem;
+        margin-right: .75rem;
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont h3{
+        font-size: 100%;
+        /* font-size: 1.5rem; */
+    }
+    section.why-choose-us .reasons .reason-box .txt-cont p{
+        font-size: 65% ;
+        /* font-size: 0.9rem; */
+    }
+}  
 
 /* ----------------------------------------------------
 Testimonaial Section
