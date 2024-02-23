@@ -965,10 +965,11 @@ section.why-choose-us .reasons{
     flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
+    margin-top: 4rem;
 }
 
 section.why-choose-us .reasons .reason-box {
-    margin-top: 4rem;
+    
     /* box-sizing: border-box; */
 background-color: #00EDFF;
     width: 24rem;
