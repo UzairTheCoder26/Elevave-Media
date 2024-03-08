@@ -804,7 +804,9 @@ Portfolio Section
     padding: 0.5rem;
     background-color: black;
 }
-
+.portfolio .portfolio-vids .portfolio-vid iframe{
+    border-radius: 5px;
+}
 
 .portfolio .portfolio-vid.first-left-one {
     position: relative;
@@ -871,6 +873,9 @@ Portfolio Section
     border: 1.8px solid #d1d1d1;
     padding: 0.5rem;
     background-color: black;
+}
+.portfolio .other-vids .portfolio-vid iframe{
+    border-radius: 5px;
 }
 /* ----------------------------------------------------
 Responsive Portfolio Section
