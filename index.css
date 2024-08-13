@@ -39,7 +39,7 @@ header nav {
 
 /* HDR Logo */
 header nav .logo img {
-    height: 3.5rem;
+    height: 5.5rem;
 }
 header nav .logo .small-logo {
     display: none;
@@ -194,7 +194,7 @@ Laptop Screens
 --------------------------- */
 @media (max-width: 1150px) {
     header nav .logo img {
-        height: 3rem;
+        height: 4.5rem;
     }
     header nav .links-box {
         height: 3.25rem;
@@ -217,7 +217,7 @@ Small Laptop Screens
 --------------------------- */
 @media (max-width: 1050px) {
     header nav .logo img {
-        height: 2.6rem;
+        height: 4rem;
     }
     header nav .links-box {
         height: 2.8rem;
@@ -266,7 +266,7 @@ More Small Laptop Screens
     }
     header nav .logo .small-logo {
         display: block;
-        height: 5rem;
+        height: 3rem;
     }
     header nav .links-box ul{
         display: none;
@@ -315,7 +315,7 @@ section.hero{
 margin-bottom: 5rem;
 }
 section.hero h1{
-    margin-top: 1.5rem;
+    margin-top: 0rem;
     font-size: 7rem;
     text-align: center;
 text-shadow: 0 0 100px #00eeff55;
@@ -331,7 +331,7 @@ section.hero h1 span{
 
 
 section.hero .text-container .ctas {
-    margin-top: 3rem;
+    margin-top: 0.25rem;
     display: flex;
     gap: 1.5rem;
     justify-content: center;
@@ -426,7 +426,7 @@ section.hero .text-container .ctas {
 /* For Tablets */
 @media (max-width: 850px) {
     section.hero h1{
-        margin-top: -2rem;
+        margin-top: 1rem;
         font-size: 4rem;
     }
     section.hero .text-container .ctas {
@@ -438,7 +438,7 @@ section.hero .text-container .ctas {
 } 
 @media (max-width: 700px) {
     section.hero h1{
-        margin-top: -2rem;
+        margin-top: 1rem;
         font-size: 3rem;
     }
     section.hero h1 span{
@@ -486,7 +486,190 @@ section.hero .text-container .ctas {
     }
     
 } 
+/* ----------------------------------------------------
+Results Section
+---------------------------------------------------- */
+section.results {
 
+    padding: 5rem 0;
+    margin-top: 5rem !important;
+    border-top: 0.5px solid grey;
+
+}
+
+section.results pre {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 4rem;
+}
+
+section.results pre span {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+/* ----------------------------------------------------
+Responsive PRE
+---------------------------------------------------- */
+/* ---------------------------
+Big Screens
+--------------------------- */
+@media (max-width: 1150px) {
+
+
+    section.results pre {
+        font-size: 2.5rem;
+    }
+
+    section.results pre span {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+
+    section.results pre {
+        font-size: 2rem;
+    }
+
+    section.results pre span {
+        font-size: 3rem;
+    }
+
+}
+@media (max-width: 750px) {
+    section.results pre {
+        font-size: 1.5rem;
+    }
+
+    section.results pre span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 569px) {
+
+    section.results pre {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    section.results pre span {
+        font-size: 2.6rem;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+
+    section.results pre {
+        font-size: 1.1rem;
+    }
+
+    section.results pre span {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    section.results pre {
+        font-size: 1rem;
+    }
+
+    section.results pre span {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    section.results pre {
+        font-size: 0.8rem;
+    }
+
+    section.results pre span {
+        font-size: 1.6rem;
+    }
+
+} 
+
+/* ----------------------------------------------------
+Baki Results Code
+---------------------------------------------------- */
+
+section.results .container{
+    box-sizing: border-box !important;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+section.results .container .result{
+    /* border: 1px solid whitesmoke; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+}
+section.results .container .result h3{
+    font-family: "poppins", sans-serif;
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-shadow: 0 0 100px var(--primary-color),
+    3px 3px 4px rgb(0, 0, 0);
+}
+section.results .container .result p{
+    font-family: "poppins";
+    font-size: 1rem;
+}
+/* ----------------------------------------------------
+Responsive Result Section
+---------------------------------------------------- */
+
+@media (max-width: 850px) {
+    section.results .container{
+        gap: 3rem;
+
+    }
+    section.results .container .result h3{
+        font-size: 2rem;
+        text-shadow: 0 0 100px var(--primary-color),
+        3px 3px 4px rgb(0, 0, 0);
+    }
+    section.results .container .result p{
+        font-family: "poppins";
+        font-size: .9rem;
+    }
+
+}
+@media (max-width: 450px) {
+    section.results .container{
+        flex-direction: column;
+        gap: 0;
+
+    }
+    section.results .container .result{
+        margin-top: -.5rem;
+    }
+    section.results .container .result h3{
+        font-size: 2rem;
+    }
+    section.results .container .result p{
+        font-size: .75rem;
+    }
+
+}
 /* ----------------------------------------------------
 Clients Section
 ---------------------------------------------------- */
@@ -494,8 +677,6 @@ section.our-clients {
 
     background-color: black;
     padding: 5rem 0;
-    margin-top: 5rem !important;
-
 }
 
 section.our-clients pre {
@@ -511,6 +692,8 @@ section.our-clients pre span {
     color: var(--primary-color);
     font-size: 4rem;
 }
+
+
 /* ----------------------------------------------------
 Responsive PRE
 ---------------------------------------------------- */
@@ -604,7 +787,7 @@ Big Screens
 
 /* 
 --------------------
-Baki code
+Baki clients code
 ------------------- */
 
 section.our-clients .clients {
