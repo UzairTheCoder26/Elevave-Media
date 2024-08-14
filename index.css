@@ -939,6 +939,157 @@ Big Screens
 
 }
 
+
+/* ----------------------------------------------------
+About us Section
+---------------------------------------------------- */
+section.about{
+    margin: 8rem 3rem;
+}
+section.about .container{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+section.about .container .img-cont{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+section.about .container .img-cont img{
+    height: 25rem;
+}
+section.about .container .text-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+section.about .container .text-container h2{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+section.about .container .text-container p{
+    font-family: "montserrat";
+    font-weight: 500;
+    line-height: 25px;
+}
+section.about .container .text-container .box{
+    background-color: #021A2C;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    width: 25rem;
+}
+section.about .container .text-container .box h3{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: .75rem;
+}
+section.about .container .text-container .box p{
+    font-family: "montserrat";
+    line-height: 20px;
+}
+section.about .container .text-container .box a{
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: black;
+    font-family: "poppins";
+    font-weight: 500;
+    display: inline-block;
+    margin-top: .5rem;
+    border-radius: 0.5rem;
+}
+section.about .container .text-container .box a:hover{
+    background-color: #1B4557;
+    border:  solid 1.5px white ;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+/* ----------------------------------------------------
+responsvie about Section
+---------------------------------------------------- */
+@media (max-width: 1040px) {
+    section.about .container{
+        gap: 2rem;
+    }
+    section.about .container .img-cont img{
+        height: 17rem;
+    }
+    section.about .container .text-container h2{
+        font-size: 2rem;
+    }
+    section.about .container .text-container p{
+        font-size: 0.85rem;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    section.about .container .text-container .box{
+        padding: .75rem 1rem;
+        border-radius: 1rem;
+        width: 20rem;
+    }
+    section.about .container .text-container .box h3{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    section.about .container .text-container .box p{
+        font-size: 0.75rem;
+        line-height: 17px;
+    }
+    section.about .container .text-container .box a{
+        font-size: 0.7rem;
+        padding: 0.25rem .75rem;
+        border-radius: 0.25rem;
+    }
+}
+@media (max-width: 850px) {
+    section.about{
+        margin: 5rem 3rem;
+    }
+    section.about .container{
+
+        flex-direction: column;
+        gap: 2rem;
+    }
+    section.about .container .img-cont img{
+        height: 15rem;
+    }
+    section.about .container .text-container{
+        align-items: center;
+    }
+    section.about .container .text-container h2{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    section.about .container .text-container p{
+        text-align: center;
+    }
+    section.about .container .text-container .box{
+        text-align: center;
+        width: 15.5rem;
+    }
+}
+@media (max-width: 380px) {
+    section.about{
+        margin: 5rem 1.5rem;
+    }
+    section.about .container .img-cont img{
+        height: 12rem;
+    }
+
+    section.about .container .text-container h2{
+        font-size: 1.5rem;
+    }
+    section.about .container .text-container p{
+        font-size: 0.75rem;
+    }
+    section.about .container .text-container .box{
+        text-align: center;
+        width: 13rem;
+    }
+}
 /* ----------------------------------------------------
 Portfolio Section
 ---------------------------------------------------- */
