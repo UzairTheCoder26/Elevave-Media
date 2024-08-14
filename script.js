@@ -1,3 +1,21 @@
+
+/*--------------------------------------------------------------
+    # Loading Screen
+    --------------------------------------------------------------*/
+    document.addEventListener("DOMContentLoaded", function() {
+    // Simulate content loading
+    setTimeout(function() {
+        // Hide the loading screen
+        document.getElementById("loading-screen").style.display = "none";
+        
+        // Display the content
+        document.getElementById("content").style.display = "block";
+    }, 1000); // Adjust the time as needed
+});
+
+
+
+
 /*--------------------------------------------------------------
     # on Scroll
     --------------------------------------------------------------*/
