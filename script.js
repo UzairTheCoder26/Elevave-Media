@@ -149,4 +149,5 @@ window.addEventListener('resize', function () {
                 offset: 40,
                 delay: 50,
                 duration: 1000,
+                once: true
               });
