@@ -3263,6 +3263,167 @@ Big Screens
     }
     
 }
+
+/* ----------------------------------------------------
+Team Section
+---------------------------------------------------- */
+
+section.team pre {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 4rem;
+}
+
+section.team pre span {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+/* ----------------------------------------------------
+Responsive PRE
+---------------------------------------------------- */
+/* ---------------------------
+Big Screens
+--------------------------- */
+@media (max-width: 1150px) {
+
+
+    section.team pre {
+        font-size: 2.5rem;
+    }
+
+    section.team pre span {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+
+    section.team pre {
+        font-size: 2rem;
+    }
+
+    section.team pre span {
+        font-size: 3rem;
+    }
+
+}
+@media (max-width: 750px) {
+    section.team pre {
+        font-size: 1.5rem;
+    }
+
+    section.team pre span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 569px) {
+
+    section.team pre {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    section.team pre span {
+        font-size: 2.6rem;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+
+    section.team pre {
+        font-size: 1.1rem;
+    }
+
+    section.team pre span {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    section.team pre {
+        font-size: 1rem;
+    }
+
+    section.experteamtise pre span {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    section.team pre {
+        font-size: 0.8rem;
+    }
+
+    section.team pre span {
+        font-size: 1.6rem;
+    }
+
+} 
+/* ----------------------------------------------------
+Baki team Code
+---------------------------------------------------- */
+section.team{
+    padding: 5rem 0 0 0;
+    margin-top: 5rem !important;
+    border-top: 0.5px solid grey;
+
+}
+section.team .container {
+
+    padding: 2rem 10rem;
+
+}
+section.team .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+section.team .img-cont img{
+    width: 100%;
+}
+/* ----------------------------------------------------
+Responsive Baki team Code
+---------------------------------------------------- */
+
+@media (max-width: 1300px) {
+    section.team .container {
+
+        padding: 2rem 5rem;
+    
+    }
+
+} 
+
+
+@media (max-width: 850px) {
+    section.team .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 3rem;
+
+    }
+
+} 
+@media (max-width: 550px) {
+   
+    section.team .container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+
+    }
+} 
+   
 /* -----------------------------------------
 End Cta Section
 ----------------------------------------- */
