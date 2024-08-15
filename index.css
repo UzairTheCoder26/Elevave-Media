@@ -1225,7 +1225,7 @@ Big Screens
 Baki Why Choose US NEW Code
 ---------------------------------------------------- */
 section.prob-sol{
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     margin-top: 5rem !important;
     border-top: 0.5px solid grey;
 
@@ -1413,7 +1413,7 @@ Big Screens
 Baki Expertise Code
 ---------------------------------------------------- */
 section.expertise{
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     margin-top: 5rem !important;
     border-top: 0.5px solid grey;
 
@@ -1870,13 +1870,172 @@ align-items: center;
         font-size: 1rem;
     }
 }
+
+/* ----------------------------------------------------
+Case Study Section
+---------------------------------------------------- */
+
+section.case pre {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 4rem;
+}
+
+section.case pre span {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+/* ----------------------------------------------------
+Responsive PRE
+---------------------------------------------------- */
+/* ---------------------------
+Big Screens
+--------------------------- */
+@media (max-width: 1150px) {
+
+
+    section.case pre {
+        font-size: 2.5rem;
+    }
+
+    section.case pre span {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+
+    section.case pre {
+        font-size: 2rem;
+    }
+
+    section.case pre span {
+        font-size: 3rem;
+    }
+
+}
+@media (max-width: 750px) {
+    section.case pre {
+        font-size: 1.5rem;
+    }
+
+    section.case pre span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 569px) {
+
+    section.case pre {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    section.case pre span {
+        font-size: 2.6rem;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+
+    section.case pre {
+        font-size: 1.1rem;
+    }
+
+    section.case pre span {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    section.case pre {
+        font-size: 1rem;
+    }
+
+    section.case pre span {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    section.case pre {
+        font-size: 0.8rem;
+    }
+
+    section.case pre span {
+        font-size: 1.6rem;
+    }
+
+} 
+/* ----------------------------------------------------
+Baki Expertise Code
+---------------------------------------------------- */
+section.case{
+    padding: 5rem 0 0rem 0;
+    margin-top: 5rem !important;
+    border-top: 0.5px solid grey;
+
+}
+section.case .container {
+
+    padding: 0 10rem 2rem 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+}
+section.case .img-cont img{
+    height: 30rem;
+}
+/* ----------------------------------------------------
+Responsive Baki Expertise Code
+---------------------------------------------------- */
+
+@media (max-width: 960px) {
+    section.case .container {
+
+        padding: 0 10rem 2rem 10rem;
+        gap: 3rem;
+    
+    }
+    section.case .img-cont img{
+        height: 25rem;
+    }
+
+} 
+
+
+@media (max-width: 730px) {
+    section.case .container {
+flex-direction: column;
+        padding: 0 3rem 2rem 3rem;
+        gap: 0;
+    
+    }
+    section.case .img-cont img{
+        height: auto;
+        width: 100%;
+    }
+   
+    
+} 
 /* ----------------------------------------------------
 Why Choose Us Section
 ---------------------------------------------------- */
-section.why-choose-us pre {
+/* section.why-choose-us pre {
     margin-bottom: 1.5rem;
 }
-/* Chose us Reasons */
 section.why-choose-us .reasons{
     width: 90%;
     margin: auto;
@@ -1891,7 +2050,6 @@ section.why-choose-us .reasons{
 section.why-choose-us .reasons .reason-box {
     
     
-    /* box-sizing: border-box; */
 background-color: #00EDFF;
     width: 24rem;
     display: flex;
@@ -1917,7 +2075,6 @@ section.why-choose-us .reasons .reason-box .txt-cont h3{
     font-family: "jost";
     font-weight: 800;
     font-size: 150%;
-    /* font-size: 1.5rem; */
     margin-bottom: 0.5rem;
     color: black;
     text-align: left;
@@ -1925,19 +2082,19 @@ section.why-choose-us .reasons .reason-box .txt-cont h3{
 section.why-choose-us .reasons .reason-box .txt-cont p{
     font-family: "poppins";
     font-size: 90% ;
-    /* font-size: 0.9rem; */
     font-weight: 500;
     margin: 0;
     color: black;
     text-align: left;
 
-}
+} */
 /* ----------------------------------------------------
 Responsive Process Section
 ---------------------------------------------------- */
 /* ---------------------------
 Big Screens
 --------------------------- */
+/*
 @media (min-width: 1550px) {
     section.why-choose-us .reasons {
         width: 75rem;
@@ -1948,7 +2105,6 @@ Big Screens
     }
     section.why-choose-us .reasons .reason-box .txt-cont h3{
         font-size: 130%;
-        /* font-size: 1.5rem; */
         margin-bottom: 0.5rem;
     }
     section.why-choose-us .reasons .reason-box .txt-cont p{
@@ -2010,9 +2166,6 @@ Big Screens
         justify-content: center;
 
     }
-    /* section.process .steps img {
-        width: 15rem;
-    } */
 }
 
 @media (max-width: 750px) {
@@ -2034,11 +2187,6 @@ Big Screens
 }
 
 @media (max-width: 569px) {
-    /* section.process .steps img {
-
-        width: 90%;
-    }
-     */
     section.why-choose-us pre {
         font-size: 1.3rem;
         margin-bottom: 2rem;
@@ -2069,11 +2217,9 @@ Big Screens
     }
     section.why-choose-us .reasons .reason-box .txt-cont h3{
         font-size: 120%;
-        /* font-size: 1.5rem; */
     }
     section.why-choose-us .reasons .reason-box .txt-cont p{
         font-size: 70% ;
-        /* font-size: 0.9rem; */
     }
 
 }
@@ -2107,11 +2253,9 @@ Big Screens
     }
     section.why-choose-us .reasons .reason-box .txt-cont h3{
         font-size: 110%;
-        /* font-size: 1.5rem; */
     }
     section.why-choose-us .reasons .reason-box .txt-cont p{
         font-size: 70% ;
-        /* font-size: 0.9rem; */
     }
 }  
 @media (max-width: 360px) {
@@ -2121,13 +2265,11 @@ Big Screens
     }
     section.why-choose-us .reasons .reason-box .txt-cont h3{
         font-size: 100%;
-        /* font-size: 1.5rem; */
     }
     section.why-choose-us .reasons .reason-box .txt-cont p{
         font-size: 65% ;
-        /* font-size: 0.9rem; */
     }
-}  
+}  */
 
 /* ----------------------------------------------------
 Testimonaial Section
