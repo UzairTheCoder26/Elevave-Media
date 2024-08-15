@@ -889,8 +889,6 @@ Big Screens
 
 
 @media (max-width: 1200px) {
-    section.our-clients {
-    }
     section.our-clients .clients {
         gap: 1rem;
         margin-top: 0;
