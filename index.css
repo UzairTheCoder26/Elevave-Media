@@ -1305,6 +1305,169 @@ Responsive Baki Why Choose US NEW Code
 
 }   
 /* ----------------------------------------------------
+Expertise Section
+---------------------------------------------------- */
+
+section.expertise pre {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 4rem;
+}
+
+section.expertise pre span {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+/* ----------------------------------------------------
+Responsive PRE
+---------------------------------------------------- */
+/* ---------------------------
+Big Screens
+--------------------------- */
+@media (max-width: 1150px) {
+
+
+    section.expertise pre {
+        font-size: 2.5rem;
+    }
+
+    section.expertise pre span {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+
+    section.expertise pre {
+        font-size: 2rem;
+    }
+
+    section.expertise pre span {
+        font-size: 3rem;
+    }
+
+}
+@media (max-width: 750px) {
+    section.expertise pre {
+        font-size: 1.5rem;
+    }
+
+    section.expertise pre span {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 569px) {
+
+    section.expertise pre {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+    section.expertise pre span {
+        font-size: 2.6rem;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+
+    section.expertise pre {
+        font-size: 1.1rem;
+    }
+
+    section.expertise pre span {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    section.expertise pre {
+        font-size: 1rem;
+    }
+
+    section.expertise pre span {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    section.expertise pre {
+        font-size: 0.8rem;
+    }
+
+    section.expertise pre span {
+        font-size: 1.6rem;
+    }
+
+} 
+/* ----------------------------------------------------
+Baki Expertise Code
+---------------------------------------------------- */
+section.expertise{
+    padding: 5rem 0;
+    margin-top: 5rem !important;
+    border-top: 0.5px solid grey;
+
+}
+section.expertise .container {
+
+    padding: 2rem 10rem;
+
+}
+section.expertise .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+section.expertise .img-cont img{
+    width: 100%;
+}
+/* ----------------------------------------------------
+Responsive Baki Expertise Code
+---------------------------------------------------- */
+
+@media (max-width: 1300px) {
+    section.expertise .container {
+
+        padding: 2rem 5rem;
+    
+    }
+
+} 
+
+
+@media (max-width: 850px) {
+    section.expertise .container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 2rem 3rem;
+
+    }
+
+} 
+@media (max-width: 550px) {
+   
+    section.expertise .container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1.5rem;
+
+    }
+} 
+   
+/* ----------------------------------------------------
 Portfolio Section
 ---------------------------------------------------- */
 
