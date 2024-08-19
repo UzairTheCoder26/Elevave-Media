@@ -841,7 +841,7 @@ section.expertise .container {
     flex-direction: column;
     
     }
-}
+
 /*--------------------------
 Book a Call
 -----------------------------*/
@@ -855,4 +855,4 @@ Book a Call
 .book-a-call .container a.filled-cta {
     margin-right: .5rem;
 
-}
+}}
