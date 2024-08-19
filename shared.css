@@ -19,7 +19,7 @@ body {
 /* ----------------------------------------------------
 Loading Screen
 ---------------------------------------------------- */
-#loading-screen {
+/* #loading-screen {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -44,7 +44,7 @@ Loading Screen
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 /* ----------------------------------------------------
 CTA Buttons
