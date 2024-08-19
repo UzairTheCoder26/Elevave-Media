@@ -24,7 +24,7 @@
 function handleScroll() {
   var distanceY = window.pageYOffset || document.documentElement.scrollTop,
       logo = document.querySelector('.logo'),
-      hdrCta = document.querySelector('.hdr-ctaa'),
+      hdrCta = document.querySelector('.hdr-cta'),
       navElement = document.querySelector('nav');
 
   if (distanceY > 150) {
@@ -33,13 +33,13 @@ function handleScroll() {
       navElement.style.justifyContent = 'center';
   } else {
       logo.style.display = 'block';
-      hdrCta.style.display = 'block';
+      hdrCta.style.display = 'flex';
       navElement.style.justifyContent = 'space-between';
   }
 }
 
 // Add scroll event only if window width is above 850px
-if (window.innerWidth > 850) {
+if (window.innerWidth > 1060) {
   window.addEventListener('scroll', handleScroll);
 }
 
@@ -148,6 +148,6 @@ window.addEventListener('resize', function () {
             AOS.init({
                 offset: 40,
                 delay: 50,
-                duration: 1000,
+                duration: 100,
                 once: true
               });
