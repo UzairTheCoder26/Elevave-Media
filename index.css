@@ -514,17 +514,6 @@ Videos
     margin-bottom: 5rem;
 }
 
-/* .portfolio .other-vids .portfolio-vid {
-    width: 15rem;
-    border-radius: 1rem;
-    border: 2px solid var(--primary-stroke);
-    padding: 0.5rem;
-    background-color: black;
-}
-
-.portfolio .other-vids .portfolio-vid iframe {
-    border-radius: .75rem;
-} */
 
 
 /* ----------------------------------------------------
@@ -545,6 +534,19 @@ margin: auto;
 border: 2px solid var(--primary-stroke);
 border-radius: 2rem;
 padding: 5rem 2rem 2rem 2rem;
+
+}
+section.case .container a.pdf{
+    display: none;
+}
+@media(max-width: 1275px){
+    section.case .container a{
+        display: none;
+    }
+    section.case .container a.pdf{
+        display: block;
+    }
+   
 
 }
 section.case .container pre{
