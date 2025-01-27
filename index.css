@@ -140,9 +140,12 @@ section.our-clients .clients .client {
 }
 
 section.our-clients .clients .client img {
-    height: 10rem;
-    filter: grayscale(1110%);
+    height: 9rem;
+    /* filter: grayscale(1110%); */
     transition: all ease 0.5s;
+        border: 2px solid var(--primary-color);
+        padding: 0.35rem; 
+        border-radius: 50rem;
 }
 
 section.our-clients .clients .client img:hover {
@@ -532,6 +535,7 @@ section.case .container {
     box-sizing: border-box;
     max-width: 80rem;
 margin: auto;
+margin-bottom: 2rem;
 border: 2px solid var(--primary-stroke);
 border-radius: 2rem;
 padding: 5rem 2rem 2rem 2rem;
